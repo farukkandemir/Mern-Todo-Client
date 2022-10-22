@@ -12,7 +12,7 @@ function CreateTodo() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:4000/api/todos", {
+      await axios.post("https://mern-todo-api-iq6w.onrender.com", {
         desc: descRef.current.value,
         priority: prioRef.current.value,
       });

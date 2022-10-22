@@ -13,7 +13,10 @@ function EditTodo() {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:4000/api/todos/${id}`, {desc, priority: prio});
+      await axios.put(`https://mern-todo-api-iq6w.onrender.com/${id}`, {
+        desc,
+        priority: prio,
+      });
       navigate("/");
     } catch (error) {
       console.log(error);

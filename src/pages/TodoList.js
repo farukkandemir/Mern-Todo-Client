@@ -15,13 +15,13 @@ function TodoList() {
 
   async function getAllTodo() {
     await axios
-      .get("http://localhost:4000/api/todos")
+      .get("https://mern-todo-api-iq6w.onrender.com/api/todos")
       .then((res) => setTodos(res.data))
       .catch((err) => console.log(err));
   }
 
   async function handleDelete(id) {
-    await axios.delete(`http://localhost:4000/api/todos/${id}`);
+    await axios.delete(`https://mern-todo-api-iq6w.onrender.com/api/todos/${id}`);
 
     navigate(0);
   }
