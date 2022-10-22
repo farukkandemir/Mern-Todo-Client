@@ -13,7 +13,7 @@ function EditTodo() {
     e.preventDefault();
 
     try {
-      await axios.put(`https://mern-todo-api-iq6w.onrender.com/${id}`, {
+      await axios.put(`https://mern-todo-api-iq6w.onrender.com/api/todos${id}`, {
         desc,
         priority: prio,
       });
